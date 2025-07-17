@@ -16,6 +16,16 @@ const members = [
     ]
   },
 
+  {
+    avatar: 'https://www.github.com/barnard33-233.png',
+    name: 'Mohan',
+    title: 'Mohan',
+    desc: 'WHUCSE;2020;2024',
+    links: [
+      { icon: 'github', link: 'https://www.github.com/barnard33-233' },
+    ]
+  },
+
   // --- 添加成员 ---
   // 复制上面的一个成员对象，然后修改内容即可
   // {
