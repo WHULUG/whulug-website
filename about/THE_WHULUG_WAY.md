@@ -92,5 +92,4 @@
 
 ---
 
-本文档采用 Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0) 许可协议发布。
-如需查看完整许可证文本，请访问：[https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/) 或查阅本仓库根目录下的 LICENSE 文件。
+<CCBYSA/>

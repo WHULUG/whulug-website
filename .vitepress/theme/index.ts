@@ -5,6 +5,7 @@ import DefaultTheme from 'vitepress/theme'
 import './style.css'
 
 import PostList from './components/PostList.vue'
+import CCBYSA from './components/CCBYSA.vue'
 
 export default {
   extends: DefaultTheme,
@@ -15,5 +16,6 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     app.component('PostList', PostList)
+    app.component('CCBYSA', CCBYSA)
   }
 } satisfies Theme
