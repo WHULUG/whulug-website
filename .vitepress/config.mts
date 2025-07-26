@@ -5,6 +5,7 @@ export default defineConfig({
   lang: 'zh-CN',
   title: "WHULUG",
   description: "武汉大学珞珈极客协会官方网站",
+  base: '/whulug-website/', 
   head: [
     [
       'link', 
