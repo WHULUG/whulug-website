@@ -1,20 +1,20 @@
 import { defineConfig } from 'vitepress'
 
-const base = '/whulug-website/'
+const BASE = '/whulug-website/'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-CN',
   title: "WHULUG",
   description: "武汉大学珞珈极客协会官方网站",
-  base: base, 
+  base: BASE, 
   head: [
     [
       'link', 
       { 
         rel: 'icon',
         type: "image/svg+xml",
-        href: `${base}WHULUG.svg`
+        href: `${BASE}WHULUG.svg`
       }
     ]
   ],

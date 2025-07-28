@@ -1,16 +1,17 @@
 <script setup>
 import { data as posts } from './posts.data.js'
+import { withBase} from 'vitepress'
 </script>
 
 <template>
   <div class="post-list">
-    <div v-for="post of posts" :key="post.url" class="post-item">
-      <h2 class="title">
-        <a :href="post.url">{{ post.frontmatter.title }}</a>
+    <div v-for="post of posts" :key="withBase(post.url)" class="post-item">
+    <h2 class="title">
+        <a :href="withBase(post.url)">{{ post.frontmatter.title }}</a>
       </h2>
       <p class="date">{{ new Date(post.frontmatter.date).toLocaleDateString('zh-CN') }}</p>
       <p class="excerpt">{{ post.frontmatter.excerpt }}</p>
-      <a :href="post.url" class="read-more">阅读全文 →</a>
+      <a :href="withBase(post.url)" class="read-more">阅读全文 →</a>
     </div>
   </div>
 </template>
