@@ -1,23 +1,26 @@
 import { defineConfig } from 'vitepress'
 
+const BASE = '/whulug-website/'
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-CN',
   title: "WHULUG",
   description: "武汉大学珞珈极客协会官方网站",
-  base: '/whulug-website/', 
+  base: BASE, 
   head: [
     [
       'link', 
       { 
-        rel: 'icon', 
-        href: '/WHULUG.png'
+        rel: 'icon',
+        type: "image/svg+xml",
+        href: `${BASE}WHULUG.svg`
       }
     ]
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: '/WHULUG.png',
+    logo: '/WHULUG.svg',
 
     nav: [
       { text: '主页', link: '/' },
